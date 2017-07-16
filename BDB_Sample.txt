@@ -1,0 +1,57 @@
+Tradeport Batch monitoring dashboard
+
+Aiming at manual task reduction, faster discovery & recovery and ease of know the actual batch status, dashboard was designed and developed by TS team and it’s in use effective April. The Techstack used is Angular JS 2, SpringBot, Maven and Tomcat
+
+Problem statement:
+-          No visual view of batch status and lack of front end to monitor
+-          Not proactive and Often waits for failure alert tickets to manage the incident in reactive way
+-          Busy and tight batch window managed by a single person leads to accumulation of issues and risk to service
+-          Comprehensive Run stats are not available for opportunities to fix and enhance the problematic components
+-          Hourly stats and unusual behaviour are being prepared by Batch support personnel manually for internal sharing
+-          Manual work for batch support to check the status manually for every country
+
+
+-          Easy Graphical reference of overall status of the batch
+-          Stay ahead and be Proactive and engage relevant activities in place of waiting for a failure
+-          Increases the efficiency of Batch support personnel by reducing manual work
+-          Provides a platform for Tech team to pick opportunities to enhance and optimize
+
+
+
+-          Business will be beneficial of this proactive action from PSS. Issues like Delayed online window, missing cutoff and inconsistent interface deliveries can be avoided with proactive management
+-          Tech support Batch personnel will have automated dashboard and can be atop the situation
+
+
+
+Key features designed in simpler way and widening our monitoring scope to batch is something to note and below are details 
+  Individual Country Performance on Batch Execution performance
+  Single Glance immunity check of any country executing the Batch with various status
+  Unique visuals for every status ( Within Range – Green, Warning-Yellow , Attention – Amber, Service at Risk – Red ,Holiday – Grey, Weekend – Light Grey, Completed – Dark Green, Yet to Start - Blue)
+  Scale to indicate Time taken for batch completion, execution and current state
+  Real Time data which is configurable for refresh polling
+  Threshold data and Mean Time of execution is pre calculated in Data Base (like averaging logic for past 3 months of data). This is configurable
+  Expected start time and end time for a job as well as for a country as whole is punched in Data base. This is also calculated considering 3 months average data.
+
+  Top Delaying Jobs & Long Running Jobs
+  Jobs for all the countries completed successfully but taken longer than usual are listed in the charts. Input to Tech and L3 team for optimization work
+  Jobs that has been stuck & prolonged, occupies the larger section of pie chart ( higher % )
+  Total time taken for a job to complete and a relative percentage(%) with other delayed jobs is indicated on hover
+  Advanced real-time interactive pie chart for user convenience
+  All long running jobs are indicated in a pie chart that are currently running and immediate pick for batch support personnel to investigate
+  Clear indications of execution time with a relative percentage(%) is indicated on hover
+
+  List Of Failed Jobs
+  List of all Failed jobs globally
+  Indicates the time taken in minutes to execute before failing
+  Real time and auto refreshing in every 60 min ( configurable )
+
+  Business Date validation
+  Single glance business Date view for all sub application instances like Static,OTP,LTP & Reports
+  Highlight Business date mismatches throughout in real time auto refreshing
+
+  User Interactive section
+  User can check the status of any job for any country for any date 
+  This section is replacement of the old Magellan Dashboard
+  User can choose from dropdown and calendar to pick the date
+
+
